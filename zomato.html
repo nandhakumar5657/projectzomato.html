@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Zomato</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="./Zomato And Feeding India Are On A Mission To Battle Food Wastage And Hunger - HungryForever Food Blog.jpeg">
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        #top{
+            background-image: url(./Images/heroSectionBackground\ copy.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 1550px;
+            height: 420px;
+        }
+        #toptop{
+            padding-top: 20px;
+            display: flex; 
+            justify-content: start;
+            flex-direction: row;
+        }
+        #toptop>div{
+            color: white;
+            font-size: 20px;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        #topmid{
+            margin-top: 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: white;
+        }
+        #zomato{
+            font-size: 100px;
+            font-style: italic;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+        }
+        #heading2{
+            font-size: 35px;
+            font-weight: lighter;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        #topbottom{
+            margin-left: 250px;
+            margin-top: 25px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+            width: 780px;
+            height: 55px;
+            border-radius: 8px;
+        }
+        #selecttop{
+            width: 200px;
+            height: 40px;
+            border: 0px;
+        }
+        #inputtop{
+            width: 400px;
+            height: 40px;
+            border: 0px;
+            font-size: medium;
+        }
+        i{
+            margin-right: 10px;
+            font-size: x-large;
+            margin-left: 30px;
+        }
+        #mode{
+            display: flex;
+            justify-content: center;
+        }
+        #mode>div{
+            width: 350px;
+            height: 270px;
+            display: inline-block;
+            border: 1px;
+            border-style: solid;
+            border-radius: 15px;
+            margin: 10px;
+            margin-top: 40px;
+        }
+        #mode1{
+            background-image: url(./Images/online.jpeg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            width: 350px;
+            height: 200px;
+        }
+        #mode2{
+            background-image: url(./Images/dinning.jpeg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            width: 350px;
+            height: 200px;
+        }
+        #mode3{
+            background-image: url(./Images/item3.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            width: 350px;
+            height: 200px;
+        }
+        .modeh3{
+            margin-top: 10px;
+            margin-left: 15px;
+            font-size: 22px;
+            font-weight: lighter;
+        }
+        .modep{
+            margin-left: 15px;
+            margin-top: 2px;
+            font-size: 18px;
+        }
+        #Collectionsh1{
+            margin-top: 80px;
+            padding-left: 90px;
+            font-size: 40px;
+            font-weight: lighter;
+        }
+        #Collectionsp{
+            padding-left: 90px;
+            font-size: 20px;
+            display: inline;
+        }
+        #collections{
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+            color: white;
+        }
+        #collections>div{
+            margin: 5px;
+            border-radius: 5px;
+        }
+        #collections1{
+            width: 260px;
+            height: 300px;
+            display: inline-block;
+            background-image: url(./Images/collection1.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        #collections2{
+            width: 260px;
+            height: 300px;
+            display: inline-block;
+            background-image: url(./Images/collection2.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        #collections3{
+            width: 260px;
+            height: 300px;
+            display: inline-block;
+            background-image: url(./Images/collection3.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        #collections4{
+            width: 260px;
+            height: 300px;
+            display: inline-block;
+            background-image: url(./Images/collection4.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .collectiondownp{
+            margin-top: 250px;
+            margin-left: 15px;
+            font-size: 20px;
+        }
+        .collectionsicon{
+            font-size: small;
+        }
+        #branchh1{
+            margin-top: 80px;
+            margin-left: 90px;
+            font-size: 40px;
+            font-weight: lighter;
+        }
+        #branch{
+            display: grid;
+            grid-template-columns: auto auto auto;
+            margin-left: 80px;
+            width: 1130px;
+            height: 370px;
+            margin-top: 30px;
+        }
+        #branch>div{
+            width: 350px;
+            height: 100px;
+            border: 1px;
+            border-style: solid;
+            border-radius: 10px;
+            margin: 10px;;
+        }
+        .branchdivleft{
+            width: 290px;
+            height: 100px;
+            display: inline-block;
+            
+        }
+        .branchdivright{
+            width: 40px;
+            height: 100px;
+            display: inline-block;
+            
+        }
+        .branchh3{
+            font-size: 25px;
+            font-weight: lighter;
+            margin-left: 10px;
+            margin-top: 10px;
+        }
+        .branchp{
+            margin-top: 5px;
+            margin-left: 10px;
+        }
+        .branchicon{
+            font-size: medium;
+        }
+        #getapp{
+            margin-top: 100px;
+            width: 1260px;
+            height: 500px;
+            background-color: rgb(253, 250, 245);
+            display: flex;
+        }
+        #getappleft{
+            background-image: url(./Images/mobileBanner.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 210px;
+            height: 250px;
+            display: inline-block;
+            margin-left: 300px;
+            margin-top: 130px;
+        }
+        #getappright{
+            display: inline-block;
+            width: 500px;
+            height: 300px;
+            margin-top: 50px;
+            margin-left: 50px;
+        }
+        #getappinput{
+            width: 250px;
+            height: 50px;
+            margin-top: 20px;
+            border-radius: 5px;
+            border-style: solid;
+            border: 1px;
+            font-size: large;
+            padding-left: 20px;
+        }
+        #getappbutton{
+            width: 150px;
+            height: 50px;
+            color: white;
+            background-color: rgb(255, 0, 51);
+            border-style: none;
+            border-radius: 5PX;
+        }
+        #exploreh1{
+            margin-left: 80px;
+            margin-top: 50px;
+            font-weight: lighter;
+        }
+        #explore{
+            display: flex;
+            flex-direction: column;
+            padding-left: 100px;
+            margin-top: 10px;
+        }
+        #explore>div{
+            border: 1px;
+            border-style: solid;
+            border-radius: 5px;
+            width: 1000px;
+            padding: 20px;
+            margin: 10px;
+            font-size: 22px;
+        }
+        .exploreicon{
+            font-size: medium;
+        }
+        .bottomtop{
+            margin-top: 100px;
+            margin-bottom: 50px;
+        }
+        .bottombutton{
+            width: 140px;
+            height: 40px;
+            font-size: 15px;
+        }
+        #bottom{
+            display: flex;
+            margin-bottom: 70px;
+        }
+        .anchor{
+            display: flex;
+            flex-direction: column;
+            text-decoration: none;
+            text-transform: none;
+            color: gray;
+            gap: 5px;
+            font-weight: 400;
+            margin-bottom: 4px;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+            font-weight: lighter;
+            margin-bottom: 7px;
+        }
+        .link_container{
+            margin-left: 80px;
+            margin-right: 20px;
+        }
+        .bottomh3{
+            font-weight: normal;
+            margin-bottom: 12px;
+        }
+        .socialimg{
+            width: 140px;
+            margin-top: 10px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="top">
+        <div id="toptop">       
+            <div style="font-size: medium; margin-left: 40px;">Get the App</div>
+            <div style="margin-left: 600px;">Investor Relations</div>
+            <div>Add Restaurant</div>
+            <div>Log In </div>
+            <div>Sign Up</div>
+        </div>
+        <div id="topmid">
+            <h1 id="zomato">zomato</h1>
+            <h2 id="heading2">Discover the best food & drinks in Chennai</h2>
+        </div>
+        <>
+        <div id="topbottom">
+            <i class="fa-solid fa-location-dot" style="color: tomato;"></i>
+            <select id="selecttop">
+                <option>Chennai</option>
+            </select>
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input id="inputtop" type="text" placeholder="Search forrestaurant, cusine or a dish">
+        </div>
+        </>
+    </div>
+    <>
+        <div id="mode"> 
+            <div>
+                <div id="mode1"></div>
+                <h3 class="modeh3">Order Online</h3>
+                <p class="modep"> Stay home and order to your doorstep</p>
+            </div>
+            <div>
+                <div id="mode2"></div>
+                <h3 class="modeh3">Dining</h3>
+                <p class="modep">View the city's favourite dining venues</p>
+            </div>
+            <div>
+                <div id="mode3"></div>
+                <h3 class="modeh3">Nightlife and Clubs</h3>
+                <p class="modep">Explore the city’s top nightlife outlets</p>
+            </div>
+        </div>
+    </>
+    <h1 id="Collectionsh1">Collections</h1>
+    <p id="Collectionsp">Explore curated lists of top restaurants, cafes, pubs, and bars in Chennai, based on trends</p><p style="display: inline; font-size: 20px; margin-left: 130px; color: tomato;">All collections in Chennai</p><i class="fa-solid fa-caret-right" style="color: tomato;"></i>
+    <div id="collections">
+        <div id="collections1">
+            <p class="collectiondownp">Newly Opened Places</p>
+            <p style="margin-left: 15px;">7 Places<i class="fa-solid fa-caret-right collectionsicon"></i></p>
+        </div>
+        <div id="collections2">
+            <p class="collectiondownp">Best of live screening</p>
+            <p style="margin-left: 15px;">26 places<i class="fa-solid fa-caret-right collectionsicon"></i></p>
+        </div>
+        <div id="collections3">
+            <p class="collectiondownp">Sea View Dining</p>
+            <p style="margin-left: 15px;">7 places<i class="fa-solid fa-caret-right collectionsicon"></i></p>
+        </div>
+        <div id="collections4">
+            <p class="collectiondownp">Best insta-worthy Places</p>
+            <p style="margin-left: 15px;">11 places<i class="fa-solid fa-caret-right collectionsicon"></i></p>
+        </div>
+    </div>
+    <h1 id="branchh1">Popular localities in and around Chennai</h1>
+    <div id="branch">
+        <div>
+            <div class="branchdivleft">
+                <h3 class="branchh3">T Nagar</h3>
+                <p class="branchp">356 Places</p>
+            </div>
+            <div class="branchdivright"><i class="fa-solid fa-chevron-right branchicon"></i></div>
+        </div>
+        <div>
+            <div class="branchdivleft">
+                <h3 class="branchh3">Nungambakkam</h3>
+                <p class="branchp">308 Places</p>
+            </div>
+            <div class="branchdivright"><i class="fa-solid fa-chevron-right branchicon"></i></div>
+        </div><div>
+            <div class="branchdivleft">
+                <h3 class="branchh3">Velachery</h3>
+                <p class="branchp">475 Places</p>
+            </div>
+            <div class="branchdivright"><i class="fa-solid fa-chevron-right branchicon"></i></div>
+        </div><div>
+            <div class="branchdivleft">
+                <h3 class="branchh3">Adayar</h3>
+                <p class="branchp">201 Places</p>
+            </div>
+            <div class="branchdivright"><i class="fa-solid fa-chevron-right branchicon"></i></div>
+        </div><div>
+            <div class="branchdivleft">
+                <h3 class="branchh3">Anna Nagar East</h3>
+                <p class="branchp">359 Places</p>
+            </div>
+            <div class="branchdivright"><i class="fa-solid fa-chevron-right branchicon"></i></div>
+        </div><div>
+            <div class="branchdivleft">
+                <h3 class="branchh3">Thuraipakkam</h3>
+                <p class="branchp">256 Places</p>
+            </div>
+            <div class="branchdivright"><i class="fa-solid fa-chevron-right branchicon"></i></div>
+        </div>
+        <div>
+            <div class="branchdivleft">
+                <h3 class="branchh3">Mylapore</h3>
+                <p class="branchp">171 Places</p>
+            </div>
+            <div class="branchdivright"><i class="fa-solid fa-chevron-right branchicon"></i></div>
+        </div>
+        <div>
+            <div class="branchdivleft">
+                <h3 class="branchh3">Alwarpet</h3>
+                <p class="branchp">142 Places</p>
+            </div>
+            <div class="branchdivright"><i class="fa-solid fa-chevron-right branchicon"></i></div>
+        </div>
+        <div>
+            <center><p style="font-size: 20px; margin-top: 40px;">See more <i class="fa-solid fa-chevron-down branchicon"></i></p></center>  
+        </div>
+    </div>
+    <div id="getapp">
+        <div id="getappleft"></div>
+
+        <div id="getappright">
+            <h1 style="font-size: 45px; font-weight: lighter;">Get the Zomato app</h1>
+            <p style="margin-top: 20px; font-size: 20px;">We will send you a link, open it on your phone to download</p>
+            <p style="margin-top: 10px; font-size: 20px;">the app</p>
+            <input type="radio" name="through" style="margin-top: 30px;"><label style="font-size: large;">Email</label>
+            <input type="radio" name="through" style="margin-left: 30px;"><label style="font-size: large;">Phone</label><br>
+            <input type="text" placeholder="Email" id="getappinput"><button id="getappbutton">Share App Link</button>
+            <p style="margin-top: 30px; margin-bottom: 20px;">Download app from</p>
+            <img src="./Images/playStore.png" id="gplay" height="40px" width="150px" >
+            <img src="./Images/app store.png" id="appstore" width="130px">
+        </div>
+    </div>
+    <h1 id="exploreh1">Explore options near me</h1>
+    <div id="explore">
+        <div id="explore1">Popular cuisines near me <i class="fa-solid fa-chevron-down exploreicon" style="margin-left: 720px;"></i></div>
+        <div id="explore2">Popular restaurant types near me <i class="fa-solid fa-chevron-down exploreicon" style="margin-left: 652px;"></i></div>
+        <div id="explore3">Top Restaurant Chains <i class="fa-solid fa-chevron-down exploreicon" style="margin-left: 740px;"></i></div>
+        <div id="explore4">Cities We Deliver To <i class="fa-solid fa-chevron-down exploreicon" style="margin-left: 753px;"></i></div>
+    </div>
+
+    <div>
+        
+        <div class = "bottomtop">
+            <img src="./Images/zomatologo.jpg" alt="zomato logo" width="150px" style=" margin-left: 80px; margin-right: 630px;">
+            <button class="bottombutton">
+                <img src = "./Images/india flag.png" alt = "Indian Flag" style = "width: 20px; height: 20px" />
+                <select style = "border: none; background: #e8e8e8; cursor: pointer">
+                    <option>India</option>
+                    <option>United States</option>
+                    <option>Australia</option>
+                    <option>New Zealand</option>
+                    <option>Spain</option>
+                    <option>England</option>
+                </select>
+            </button>
+            <button class="bottombutton">
+                <i class = "fa fa-globe" style="width: 15px; height: 15px;"></i>
+                <select style = "border: none; background: #e8e8e8; cursor: pointer">
+                    <option>English</option>
+                    <option>Español</option>
+                    <option>Čeština</option>
+                    <option>Slovenčina</option>
+                    <option>Polish</option>
+                    <option>Italian</option>
+                </select>
+            </button>
+    </div>
+
+    <div id="bottom">
+        <div class="link_container">
+            <h3 class="bottomh3">ABOUT ZOMATO</h3>
+            <div class="anchor">
+            <a href = "#">Who We Are</a>
+            <a href = "#">Blog</a>
+            <a href = "#">Work With Us</a>
+            <a href = "#">Investor Relations</a>
+            <a href = "#">Report Fraud</a>
+            <a href = "#">Contact Us</a>
+            </div>
+        </div>
+        <div class = "link_container" style="margin-left: 50px;">
+            <h3 class="bottomh3">ZOMAVERSE</h3>
+            <div class = "anchor">
+                <a href = "#">Zomato</a>
+                <a href = "#">Blinkit</a>
+                <a href = "#">Feeding India</a>
+                <a href = "#">Hyperpure</a>
+                <a href = "#">Zomaland</a>
+            </div>
+        </div>
+        <div class="link_container">
+            <h3 class="bottomh3">FOR RESTAURANTS</h3>
+            <div class="anchor">
+                <a href="#">Partner with us</a>
+                <a href="#">Apps for you</a>
+            </div>
+        </div>
+        <div class="link_container" style="margin-left: 50px;">
+            <h3 class="bottomh3">LEARN MORE</h3>
+            <div class="anchor">
+            <a href="#">Privacy</a>
+            <a href="#">Security</a>
+            <a href="#">Terms</a>
+            <a href="#">Sitemap</a> 
+            </div>
+        </div>
+        <div class="link_container">
+            <h3 class="bottomh3">SOCIAL LINKS</h3>
+            <div class = "bottomiconbutton">
+                <i class="fa-brands fa-linkedin socialicon"></i>
+                <i class="fa-brands fa-square-instagram socialicon"></i>
+                <i class="fa-brands fa-square-twitter socialicon"></i>
+                <i class="fa-brands fa-square-youtube socialicon"></i>
+                <i class="fa-brands fa-square-facebook"></i>
+                <div class = "bottomimage">
+                    <img src = "./Images/app store.png" alt = "Apple store" class="socialimg"/> <br>
+                    <img src = "./Images/playStore.png" alt = "Play store" class="socialimg"/>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <p style="margin-left: 80px; margin-bottom: 40px;">By continuing past this page, you agree to our Terms of Service, Cookie Policy, Privacy Policy and Content Policies. All trademarks are properties of their respective owners. <br> 2008-2024 © Zomato™ Ltd. All rights reserved.</p>
+</body>
+</html>
